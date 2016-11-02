@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>SVG Project</title>
+    <link rel = "stylesheet" type = "text/css" href = "svgproject.css"
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <h1>Happy Christmas</h1>
+    <svg width = "80%" viewbox = "0 0 300 300">
+      <polygon points = "100,40 90,55 95,55 85,70 90,70 80,85 120,85 110,70 115,70 105,55 110,55" fill = "green" />
+      <circle r = "1.5" cx = "95" cy = "52" fill = "red" >
+        <animate id = "redtoblue" attributeName = "fill" from = "red" to = "blue" dur = ".75s" fill = "freeze" begin = "0s;bluetored.end" />
+        <animate id = "bluetored" attributeName = "fill" from = "blue" to = "red" dur = ".75s" fill = "freeze" begin = "redtoblue.end" />
+      </circle>
+      <circle r = "1.5" cx = "105" cy = "52" fill = "gold" >
+        <animate id = "goldtodarkgreen" attributeName = "fill" from = "gold" to = "darkgreen" dur = ".75s" fill = "freeze" begin = "0s;darkgreentogold.end" />
+        <animate id = "darkgreentogold" attributeName = "fill" from = "darkgreen" to = "gold" dur = ".75s" fill = "freeze" begin = "goldtodarkgreen.end" />
+      </circle>
+      <circle r = "1.5" cx = "109" cy = "67" fill = "indigo" >
+        <animate id = "indigotoivory" attributeName = "fill" from = "indigo" to = "ivory" dur = ".75s" fill = "freeze" begin = "0s;ivorytoindigo.end" />
+        <animate id = "ivorytoindigo" attributeName = "fill" from = "ivory" to = "indigo" dur = ".75s" fill = "freeze" begin = "indigotoivory.end" />
+      </circle>
+      <circle r = "1.5" cx = "100" cy = "75" fill = "forestgreen" >
+        <animate id = "forestgreentodarkorchid" attributeName = "fill" from = "forestgreen" to = "darkorchid" dur = ".75s" fill = "freeze" begin = "0s;darkorchidtoforestgreen.end" />
+        <animate id = "darkorchidtoforestgreen" attributeName = "fill" from = "darkorchid" to = "forestgreen" dur = ".75s" fill = "freeze" begin = "indigotoivory.end" />
+      </circle>
+      <circle r = "1.5" cx = "91" cy = "67" fill = "aqua" >
+        <animate id = "aquatospringgreen" attributeName = "fill" from = "aqua" to = "springgreen" dur = ".75s" fill = "freeze" begin = "0s;springgreentoaqua.end" />
+        <animate id = "springgreentoaqua" attributeName = "fill" from = "springgreen" to = "aqua" dur = ".75s" fill = "freeze" begin = "aquatospringgreen.end" />
+      </circle>
+      <circle r = "1.5" cx = "89" cy = "80" fill = "steelblue" >
+        <animate id = "steelbluetosaddlebrown" attributeName = "fill" from = "steelblue" to = "saddlebrown" dur = ".75s" fill = "freeze" begin = "0s;saddlebrowntosteelblue.end" />
+        <animate id = "saddlebrowntosteelblue" attributeName = "fill" from = "saddlebrown" to = "steelblue" dur = ".75s" fill = "freeze" begin = "steelbluetosaddlebrown.end" />
+      </circle>
+      <circle r = "1.5" cx = "111" cy = "80" fill = "salmon" >
+        <animate id = "salmontoorangered" attributeName = "fill" from = "salmon" to = "orangered" dur = ".75s" fill = "freeze" begin = "0s;orangeredtosalmon.end" />
+        <animate id = "orangeredtosalmon" attributeName = "fill" from = "orangered" to = "salmon" dur = ".75s" fill = "freeze" begin = "salmontoorangered.end" />
+      </circle>
+    </svg>
+  </body>
+</html>
