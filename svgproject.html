@@ -6,8 +6,9 @@
     <meta charset="utf-8">
   </head>
   <body>
-    <h1>Happy Christmas</h1>
-    <svg width = "80%" viewbox = "0 0 300 300">
+    <h1>Happy Holidays</h1>
+    <svg width = "80%" viewbox = "0 0 300 250">
+      <!---Tree Parts--->
       <polygon points = "100,40 90,55 95,55 85,70 90,70 80,85 120,85 110,70 115,70 105,55 110,55" fill = "green" />
       <circle r = "1.5" cx = "95" cy = "52" fill = "red" >
         <animate id = "redtoblue" attributeName = "fill" from = "red" to = "blue" dur = ".75s" fill = "freeze" begin = "0s;bluetored.end" />
@@ -37,6 +38,65 @@
         <animate id = "salmontoorangered" attributeName = "fill" from = "salmon" to = "orangered" dur = ".75s" fill = "freeze" begin = "0s;orangeredtosalmon.end" />
         <animate id = "orangeredtosalmon" attributeName = "fill" from = "orangered" to = "salmon" dur = ".75s" fill = "freeze" begin = "salmontoorangered.end" />
       </circle>
+      <!---Snow Fall--->
+      <circle r = "1.75" cx = "150" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "6s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "100" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "7s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "75" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "4s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "125" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "8s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "200" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "5s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      </circle>
+      <circle r = "1.75" cx = "175" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "7.5s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "225" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "6.5s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "250" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "5.5s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "275" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "8.5s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <circle r = "1.75" cx = "50" cy = "0" fill = "#FFFAFA" >
+        <animate attributeName = "opacity" from = "1" to = ".60" dur = "0.01s" fill = "freeze" />
+        <animate attributeName = "cy" from = "0" to = "150" dur = "5.88s" fill = "freeze" repeatCount = "indefinite" />
+      </circle>
+      <!---Right Side Present--->
+      <rect x = "125" y = "77" width = "7.75" height = "7.75" fill = "darkred" />
+      <rect x = "150" y = "75" width = "6" height = "10" fill = "yellowgreen" >
+        <animate attributeName = "x" from = "150" to = "127.4" dur = "5s" begin = "click" fill = "freeze" />
+        <animate attributeName = "y" from = "75" to = "77" dur = "5s" begin = "click" fill = "freeze" />
+        <animate attributeName = "width" from = "6" to = "2.75" dur = "5s" begin = "click" fill = "freeze" />
+        <animate attributeName = "height" from = "10" to = "7.75" dur = "5s" begin = "click" fill = "freeze" />
+      </rect>
+      <!---Left Side Present--->
+      <rect x = "70" y = "70" width = "7" height = "15" fill = "red" />
+      <rect x = "50" y = "40" width = "15" height = "20" fill = "darkolivegreen" >
+        <animate attributeName = "x" from = "50" to = "72.5" dur = "5s" begin = "click" fill = "freeze" />
+        <animate attributeName = "y" from = "40" to = "70" dur = "5s" begin = "click" fill = "freeze" />
+        <animate attributeName = "width" from = "15" to = "2.75" dur = "5s" begin = "click" fill = "freeze" />
+        <animate attributeName = "height" from = "20" to = "15" dur = "5s" begin = "click" fill = "freeze" />
+      </rect>
+      <!---Star--->
     </svg>
   </body>
 </html>
