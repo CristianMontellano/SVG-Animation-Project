@@ -7,6 +7,7 @@
   </head>
   <body>
     <h1>Happy Holidays</h1>
+    <p>I have depicted a small Christmas scene. It is inspired by the one of the upcoming holidays. The interactables are the farthest rectangles from the tree as well as the star on the tree.</p>
     <svg width = "80%" viewbox = "0 0 300 250">
       <!---Tree Parts--->
       <polygon points = "100,40 90,55 95,55 85,70 90,70 80,85 120,85 110,70 115,70 105,55 110,55" fill = "green" />
@@ -96,7 +97,9 @@
         <animate attributeName = "width" from = "15" to = "2.75" dur = "5s" begin = "click" fill = "freeze" />
         <animate attributeName = "height" from = "20" to = "15" dur = "5s" begin = "click" fill = "freeze" />
       </rect>
-      <!---Star--->
+      <polygon points = "101.000,36.000 104.500,40.062 102.732,35.000 108.000,34.000 102.732,33.000 104.500,27.938 101.000,32.000 97.500,27.938 99.268,33.000 94.000,34.000 99.268,35.000 97.500,40.062" fill = "gold" >
+        <animateTransform attributeType = "XML" attributeName = "transform" type = "rotate" from = "0 100 32" to = "28.5 100 32" dur = "4s" begin = "click" fill = "freeze" />
+      </polygon>
     </svg>
   </body>
 </html>
